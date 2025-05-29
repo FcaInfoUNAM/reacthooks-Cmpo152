@@ -4,7 +4,7 @@ function Card(props){
 return (
 
 <div className="flex flex-col h-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 self-stretch">
-    <img className="rounded-t-lg object-scale-down object-cover h-48 w-full pt-3 remove-bg" src={props.image?props.image:imgDefault} alt="" />
+    <img className="rounded-t-lg object-scale-down object-cover h-48 w-full pt-3 filter brightness-125" src={props.image?props.image:imgDefault} alt={props.title} />
     <div className="flex-1 flex h-full flex-col p-6">
         <h5 className="flex-1 1mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.title?props.title:'Title'}</h5>
         <p className="flex-1 text-gray-700 dark:text-gray-400 text-sm text-slate-600 mb-8">{props.paragraph?props.paragraph:'Body description'}</p>
